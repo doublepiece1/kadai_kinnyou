@@ -491,7 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   enemyBulletPrefab: {fileID: 988699027538818190, guid: 80b45a9716ce224458eb99fa8fb51991, type: 3}
   maxHp: 100
-  patternInterval: 4
+  patternInterval: 3
 --- !u!50 &420786757
 Rigidbody2D:
   serializedVersion: 5
@@ -766,7 +766,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -3.389, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 984160818}
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe103306fa33b2640826987dc631ab07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 1
+  moveSpeed: 2
   bulletPrefab: {fileID: 6234503806864016624, guid: d4ef1e9596a39074e96503b930dc9af9, type: 3}
   firePoint: {fileID: 984160818}
 --- !u!114 &1420989258
@@ -883,8 +883,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0013532937, y: -0.14072919}
-  m_Radius: 0.2821405
+  m_Offset: {x: -0.012341334, y: -0.14072923}
+  m_Radius: 0.16621132
 --- !u!50 &1420989260
 Rigidbody2D:
   serializedVersion: 5
