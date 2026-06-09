@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         moveInput = context.ReadValue<Vector2>();
         Debug.Log($"Moving: {moveInput}");
     }
-    public void OnFire(InputAction.CallbackContext context) 
+    public void OnFire(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
@@ -36,11 +36,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void Shoot() 
+    public void Shoot()
     {
         if (bulletPrefab != null && firePoint != null)
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("EnemyBullet"))
+        {
+            Debug.Log("ゲームオーバー！");
+            Destroy(gameObject); 
         }
     }
 }
